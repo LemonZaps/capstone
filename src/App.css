@@ -1,3 +1,31 @@
+Nav {
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:#333333;
+}
+
+p {
+    font: "Karla", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5px;
+
+}
+
+h1, h2 {
+    font-family: "Markazi", serfif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #333333;
+}
+
+h3 {
+    font: "Markazi", serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #333333;
+}
 #header-area {
     background-color: wheat;
 }
@@ -9,7 +37,7 @@
     justify-items: space-around;
     gap: 30px;;
     list-style: none;
-    padding-right:30px;
+    padding-right: 12vw;
     padding-bottom: 30px;
     padding-top: 0;
     margin-top: -33px;
@@ -21,6 +49,7 @@
     flex-wrap: wrap;
     padding-left: 12vw;
     padding-top: 5vw;
+    padding-bottom: 15px;
 
 }
 
@@ -32,4 +61,15 @@
 
 #footer-menu {
     list-style: none;
+}
+
+Main {
+    display: grid;
+    grid-template: none;
+}
+
+@media (max-width: 768px) {
+    #header-menu {
+        display: none;
+    }
 }

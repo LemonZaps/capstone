@@ -5,6 +5,7 @@ import React from "react"
 const Nav = () => {
     return (
         <div>
+            <nav>
             <ul id="header-menu">
                 <li>Home</li>
                 <li>About</li>
@@ -12,6 +13,7 @@ const Nav = () => {
                 <li>Order Online</li>
                 <li>Login</li>
             </ul>
+            </nav>
         </div>
     )
 }
