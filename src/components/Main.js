@@ -1,11 +1,13 @@
 import React from "react";
+import HeroSection from "./HeroSection";
+import Specials from "./Specials";
 
 const Main = () => {
     return(
         <>
-        <p>placeholder section for main body content</p>
+        <HeroSection />
+        <Specials />
         </>
-    )
-}
+    )}
 
 export default Main;

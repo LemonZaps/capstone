@@ -19,6 +19,9 @@ h1, h2 {
     font-weight: 500;
     color: #333333;
 }
+img {
+    border-radius: 16px;
+}
 
 h3 {
     font: "Markazi", serif;
@@ -27,7 +30,9 @@ h3 {
     color: #333333;
 }
 #header-area {
-    background-color: wheat;
+    background-color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #header-menu {
@@ -57,19 +62,21 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 1px solid black;
 }
 
 #footer-menu {
     list-style: none;
 }
 
-Main {
-    display: grid;
-    grid-template: none;
-}
-
 @media (max-width: 768px) {
     #header-menu {
         display: none;
     }
+}
+
+#hero-section {
+    background-color: rgb(73,94,87);
+    margin-top: -30px;
+    padding-top: 0;
 }
