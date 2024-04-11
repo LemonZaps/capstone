@@ -11,25 +11,12 @@
     display: none;
 }
 
-.nav.open {
+nav.open {
     display: block;
-    text-align: right;
-    padding-right: 15%;
-    margin-top: -20px;
-}
-
-nav ul {
-    list-style: none;
 }
 
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
-    }
-    .ham-menu {
-        font-weight: bold;
-        text-decoration: none;
-        color: #333333;
-        text-align: right;
     }
 }

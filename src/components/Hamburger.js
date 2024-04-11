@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HamburgerMenu.css';
+import { Link } from "react-router-dom";
+
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +23,15 @@ const HamburgerMenu = () => {
         <div>
             <div className="hamburger" onClick={toggleMenu}>☰</div>
             <nav className={isOpen ? 'nav open' : 'nav'}>
-                <ul>
-                    <li><a className="ham-menu" href="#home" onClick={toggleMenu}>Home</a></li>
-                    <li><a className="ham-menu" href="#about" onClick={toggleMenu}>About</a></li>
-                    <li><a className="ham-menu" href="#reservations" onClick={toggleMenu}>Reservations</a></li>
-                    <li><a className="ham-menu" href="#orderonline" onClick={toggleMenu}>Order Online</a></li>
-                    <li><a className="ham-menu" href="#Login" onClick={toggleMenu}>Login</a></li>
-                </ul>
+            <div>
+            <nav id="hamburger-menu">
+            <Link to="/" className="nav-item">Home</Link>
+            <Link to="/about" className="nav-item">About</Link>
+            <Link to="/reservations" className="nav-item">Reservations</Link>
+            <Link to="/order-online" className="nav-item">Order Online</Link>
+            <Link to="/login" className="nav-item">Login</Link>
+            </nav>
+        </div>
             </nav>
         </div>
     );

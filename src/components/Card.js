@@ -21,6 +21,7 @@ const Card = () => {
     }];
 
     return (
+//add photos and map over objects to create the info for the cards
 
         <p>{food[0].name}</p>
     );
