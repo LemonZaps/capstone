@@ -6,11 +6,11 @@ Nav {
 }
 
 p {
-    font: "Karla", sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 1.5px;
-
+    line-height: 1.5;
+    
 }
 
 h1, h2 {
@@ -29,28 +29,69 @@ h3 {
     font-weight: 500;
     color: #333333;
 }
+
+nav {
+    display: flex;
+    gap:20px;
+    padding-right: 12vw;
+}
+.nav-item{
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+}
 #header-area {
-    background-color: rgb(180, 96, 96);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
     padding-bottom: 0;
     margin-bottom: 0;
+    position: relative;
 }
 
-#top-logo{
+#header-menu {
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    flex-grow: 1;
+}
+.page-title {
     display: flex;
-    flex-wrap: wrap;
+
+}
+#top-logo{
     padding-left: 12vw;
-    padding-top: 5vw;
+    padding-top: 15px;
     padding-bottom: 15px;
 
 }
 
+.button-styles{
+    font:"Karla";
+    font-weight: bold;
+    width:200px;
+    height: 63px;
+    background-color: #F4CE14;
+    color: #333333;
+    font-size: 20px;
+    border-radius: 16px;
+    border:none;
+    cursor: pointer;
+}
 .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-top: 1px solid black;
 }
-
+#nav-footer nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 0;
+    margin: 0;
+}
 #footer-menu {
     list-style: none;
 }
@@ -64,7 +105,42 @@ h3 {
 #hero-section {
     background-color: rgb(73,94,87);
     margin-top: -30px;
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 12vw;
+    padding-right: 2vw;
+}
+#hero-desc {
+    max-width: 300px;
+    margin-top: 0;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: -260px;
+    animation: slideUp 0.8s ease-out forwards;
 }
 
 #card-group {
@@ -92,3 +168,22 @@ h3 {
 display: block;
    width: 100%;
 }
+
+#hero-title {
+    color: #F4CE14;
+    padding-bottom: 0;
+}
+
+#hero-subtitle {
+    padding-top: 0;
+    margin-top: -50px;
+}
+
+#specials-title-container {
+    display: flex;
+    gap:30px;
+    align-items: center;
+    padding-left: 12vw;
+    padding-top: 70px;
+}
+

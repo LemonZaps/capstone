@@ -8,7 +8,6 @@ const Main = () => {
         <>
         <HeroSection />
         <Specials />
-        <LinkButton to="/order-online" description={"Order Online"} />
         </>
     )}
 
