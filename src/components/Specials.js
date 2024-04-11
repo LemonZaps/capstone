@@ -5,8 +5,6 @@ const Specials = () => {
         <div>
     <h2>This Week's Specials</h2>
     <Card />
-    <Card />
-    <Card />
     </div>
     )
 }
