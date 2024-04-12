@@ -10,7 +10,6 @@ p {
     font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
-    
 }
 
 h1, h2 {
@@ -70,7 +69,7 @@ nav {
 .button-styles{
     font:"Karla";
     font-weight: bold;
-    width:200px;
+    width:auto;
     height: 63px;
     background-color: #F4CE14;
     color: #333333;
@@ -78,6 +77,9 @@ nav {
     border-radius: 16px;
     border:none;
     cursor: pointer;
+    text-overflow: wrap;
+    padding: 10px;
+    box-shadow: #0000005d 1px 12px 30px;
 }
 .footer-container {
     display: flex;
@@ -87,8 +89,8 @@ nav {
 }
 #nav-footer nav {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
 }
@@ -124,7 +126,7 @@ nav {
 .text-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 @keyframes slideUp {
     from {
@@ -147,7 +149,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    animation: slideUp 0.8s ease-out forwards;
 }
 
 #card {
@@ -185,5 +187,41 @@ display: block;
     align-items: center;
     padding-left: 12vw;
     padding-top: 70px;
+    overflow-wrap: wrap;
+    margin-right: 30px;
 }
 
+.form-styles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'karla';
+    font-weight: bold;
+    background-color: white;
+    box-shadow: #bbbbbb 1px 1px 10px 1px;
+    border-radius: 16px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    animation: slideUp 0.8s ease-out forwards;
+    margin-bottom: 100px;
+}
+
+#booking-container {
+    padding-left: 12vw;
+    background-color: #F4CE14;
+    height: auto;
+}
+
+.form-input {
+    border-radius: 16px;
+    padding:5px;
+    text-align: center;
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+}

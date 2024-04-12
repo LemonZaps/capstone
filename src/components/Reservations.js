@@ -1,9 +1,10 @@
+// Reservations.js
 import React from "react";
+import BookingForm from "./BookingForm";
 
-const Reservations = () => {
-    return(
-        <h1>Reservations Placeholder</h1>
-    )
+const Reservations = ({ availableTimes, dispatchTimes, updateTimes, initializeTimes }) => {
+    return (
+        <BookingForm availableTimes={availableTimes} dispatchTimes={dispatchTimes} initializeTimes={initializeTimes} />
+    );
 }
-
 export default Reservations;
