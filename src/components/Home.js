@@ -2,7 +2,7 @@
 import React from "react";
 function Home() {
     return (
-        <h1>Welcome to the Little Lemon site</h1>
+        <></>
     )
 }
 

@@ -61,3 +61,46 @@ describe('updateTimes function', () => {
     expect(capturedState).toEqual(['18:00', '20:00', '22:00']);
   });
 });
+
+
+
+describe('BookingForm', () => {
+    test('input for date has the correct attributes', () => {
+        render(<BookingForm />);
+        const dateInput = screen.getByLabelText('Choose date:');
+        expect(dateInput).toHaveAttribute('type', 'date');
+        expect(dateInput).toHaveAttribute('aria-required', 'true');
+        expect(dateInput).toHaveAttribute('id', 'res-date');
+    });
+
+    test('select for time has the correct attributes', () => {
+        render(<BookingForm />);
+        const timeSelect = screen.getByLabelText('Choose time:');
+        expect(timeSelect).toHaveAttribute('id', 'res-time');
+        expect(timeSelect).toHaveAttribute('aria-required', 'true');
+    });
+
+    test('input for number of guests has the correct attributes', () => {
+        render(<BookingForm />);
+        const guestsInput = screen.getByLabelText('Number of guests:');
+        expect(guestsInput).toHaveAttribute('type', 'number');
+        expect(guestsInput).toHaveAttribute('min', '1');
+        expect(guestsInput).toHaveAttribute('max', '10');
+        expect(guestsInput).toHaveAttribute('aria-required', 'true');
+        expect(guestsInput).toHaveAttribute('id', 'guests');
+    });
+
+    test('select for occasion has the correct attributes', () => {
+        render(<BookingForm />);
+        const occasionSelect = screen.getByLabelText('Occasion:');
+        expect(occasionSelect).toHaveAttribute('id', 'occasion');
+        expect(occasionSelect).toHaveAttribute('aria-required', 'true');
+    });
+
+    test('submit button has the correct attributes', () => {
+        render(<BookingForm />);
+        const submitButton = screen.getByDisplayValue('Make Your reservation');
+        expect(submitButton).toHaveAttribute('type', 'submit');
+        expect(submitButton).toBeDisabled(); // Initially disabled since form is incomplete
+    });
+});
