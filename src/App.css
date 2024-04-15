@@ -206,13 +206,17 @@ display: block;
     padding-bottom: 40px;
     padding-top: 20px;
     animation: slideUp 0.8s ease-out forwards;
-    margin-bottom: 100px;
+    height: 70%;
 }
 
 #booking-container {
-    padding-left: 12vw;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
     background-color: #F4CE14;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
 }
 
 .form-input {
@@ -221,7 +225,3 @@ display: block;
     text-align: center;
 }
 
-#form-container{
-    display: flex;
-    justify-content: center;
-}
